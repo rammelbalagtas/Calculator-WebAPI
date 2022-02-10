@@ -27,7 +27,7 @@ namespace Calculator_ClassLibrary
         {
             if (rValue != 0)
             {
-                return lValue / rValue;
+                return (double) lValue / (double) rValue;
             } 
             else
             {
