@@ -9,5 +9,11 @@ namespace Calculator_ClassLibrary
         {
             return lValue + rValue;
         }
+
+        // Method for subtracting 2 integers
+        public static double Subtract(int lValue, int rValue)
+        {
+            return lValue - rValue;
+        }
     }
 }
