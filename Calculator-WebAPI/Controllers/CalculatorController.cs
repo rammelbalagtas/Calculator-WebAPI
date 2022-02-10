@@ -30,5 +30,14 @@ namespace Calculator_WebAPI.Controllers
             Response.Headers.Add("Access-Control-Allow-Origin", "*");
             return Calculator.Subtract(lValue, rValue);
         }
+
+        //Method for the Multiplication endpoint
+        [HttpGet]
+        public int? Multiply(int lValue, int rValue)
+        {
+            //Allow cross browser access of API
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            return Calculator.Multiply(lValue, rValue);
+        }
     }
 }
