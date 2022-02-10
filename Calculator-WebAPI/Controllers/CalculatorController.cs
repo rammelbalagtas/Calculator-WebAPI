@@ -21,5 +21,14 @@ namespace Calculator_WebAPI.Controllers
             Response.Headers.Add("Access-Control-Allow-Origin", "*");
             return Calculator.Add(lValue, rValue);
         }
+
+        //Method for the Subtract endpoint
+        [HttpGet]
+        public int? Subtract(int lValue, int rValue)
+        {
+            //Allow cross browser access of API
+            Response.Headers.Add("Access-Control-Allow-Origin", "*");
+            return Calculator.Subtract(lValue, rValue);
+        }
     }
 }
