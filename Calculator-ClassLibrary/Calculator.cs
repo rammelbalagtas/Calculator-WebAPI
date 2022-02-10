@@ -15,5 +15,15 @@ namespace Calculator_ClassLibrary
         {
             return lValue - rValue;
         }
+
+        // Method for multiplying 2 integers
+        public static double Multiply(int lValue, int rValue)
+        {
+            return lValue * rValue;
+        }
+
+
+
+
     }
 }
