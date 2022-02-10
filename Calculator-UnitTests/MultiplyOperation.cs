@@ -6,6 +6,7 @@ namespace Calculator_UnitTests
     [TestClass]
     public class MultiplyOperation
     {
+        //Test multiplication of two positive numbers
         [TestMethod]
         [DataRow(1, 2, 2)]
         [DataRow(10, 12, 120)]
@@ -15,6 +16,7 @@ namespace Calculator_UnitTests
             Assert.AreEqual(expected, Calculator.Multiply(lValue, rValue));
         }
 
+        //Test multiplication of one positive and one negative number
         [TestMethod]
         [DataRow(1, -2)]
         [DataRow(-10, 12)]
@@ -24,6 +26,7 @@ namespace Calculator_UnitTests
             Assert.IsTrue(Calculator.Multiply(lValue, rValue) < 0);
         }
 
+        //Test multiplication of two negative numbers
         [TestMethod]
         [DataRow(-1, -2)]
         [DataRow(-10, -12)]
@@ -33,6 +36,7 @@ namespace Calculator_UnitTests
             Assert.IsTrue(Calculator.Multiply(lValue, rValue) > 0);
         }
 
+        //Test multiplication of a number to zero
         [TestMethod]
         [DataRow(-1, 0)]
         [DataRow(0, 12)]

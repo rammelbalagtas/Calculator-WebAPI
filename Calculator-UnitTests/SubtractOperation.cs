@@ -6,6 +6,7 @@ namespace Calculator_UnitTests
     [TestClass]
     public class SubtractOperation
     {
+        //Test subtraction of two positive numbers
         [TestMethod]
         [DataRow(1, 2, -1)]
         [DataRow(14, 12, 2)]
@@ -15,6 +16,7 @@ namespace Calculator_UnitTests
             Assert.AreEqual(expected, Calculator.Subtract(lValue, rValue));
         }
 
+        //Test subtraction of one positive and one negative number
         [TestMethod]
         [DataRow(5, -4, 9)]
         [DataRow(-15, 11, -26)]
@@ -24,6 +26,7 @@ namespace Calculator_UnitTests
             Assert.AreEqual(expected, Calculator.Subtract(lValue, rValue));
         }
 
+        //Test subtraction of two negative numbers
         [TestMethod]
         [DataRow(-1, -2, 1)]
         [DataRow(-30, -20, -10)]

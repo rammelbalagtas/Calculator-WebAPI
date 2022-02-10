@@ -6,6 +6,7 @@ namespace Calculator_UnitTests
     [TestClass]
     public class AddOperation
     {
+        //Test addition of two positive numbers
         [TestMethod]
         [DataRow(1, 2, 3)]
         [DataRow(12, 14, 26)]
@@ -15,6 +16,7 @@ namespace Calculator_UnitTests
             Assert.AreEqual(expected, Calculator.Add(lValue, rValue));
         }
 
+        //Test addition of one positive and one negative number
         [TestMethod]
         [DataRow(5, -4, 1)]
         [DataRow(-15, 11, -4)]
@@ -24,6 +26,7 @@ namespace Calculator_UnitTests
             Assert.AreEqual(expected, Calculator.Add(lValue, rValue));
         }
 
+        //Test addition of two negative numbers
         [TestMethod]
         [DataRow(-1, -2, -3)]
         [DataRow(-10, -20, -30)]
